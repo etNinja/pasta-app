@@ -20,9 +20,9 @@ body {
 .app {
   min-height: 66vh;
   display: grid;
-  grid-template-columns: 34rem 44rem;
-  grid-template-rows: 1fr 1fr;
-  column-gap: 4rem;
+  grid-template-columns: repeat(2, 30rem);
+  grid-template-rows: repeat(2, 20rem);
+  column-gap: 3rem;
   align-items: start;
 }
 .pastas-list {
@@ -57,11 +57,22 @@ body {
 }
 .button {
   background-color: orange;
+  width: 15rem;
   color: #343a40;
   padding: 0.8rem 1.2rem;
+  margin: 1rem;
   border: none;
   border-radius: 7px;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+}
+form {
+  display: grid;
+  grid-template-columns: 10rem 10rem;
+  gap: 1rem;
+}
+.add-new-pasta {
+  display: grid;
+  grid-template-rows: 5rem 1fr;
 }

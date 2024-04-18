@@ -1,10 +1,9 @@
 import { Ingredients } from "./Ingredients";
-import { initialRecipes } from "./App";
 
-export function PastasList({ onSelect }) {
+export function PastasList({ onSelect, pastas }) {
   return (
     <ul className="pastas-list">
-      {initialRecipes.map((pasta) => (
+      {pastas.map((pasta) => (
         <Ingredients pasta={pasta} onSelect={onSelect} />
       ))}
     </ul>
